@@ -14,7 +14,7 @@ func removeElement(slice []int, index int) []int {
 	}
 
 	// Удаление элемента из слайса
-	// Так как функции delete нет в го мы просто будем сращивать слайсы до и после index
+	// Так как функции delete в го мы нет, просто будем сращивать слайсы до и после index
 	slice = append(slice[:index], slice[index+1:]...)
 
 	return slice
